@@ -45,3 +45,17 @@ def another_game():
             continue
 
 # Game all put together
+start_game()
+while True:
+    want_to_play = input("\nWould you like to play the game? yes or no? ")
+    if want_to_play.lower() == "yes":
+        play_game()
+        another_game()
+        break
+        print("Thanks for playing the game. Hope to see you soon!")
+    elif want_to_play.lower() == "no":
+        print("Hope to see you again.")
+        break
+    else:
+        print("Sorry Invalid Input.")
+        continue
