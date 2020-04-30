@@ -29,3 +29,19 @@ def play_game():
                 print(f"Your guess of {guess_number} was outside the range. Remember we are playing from 1 to 10.")
                 continue
             print("\nYou have finished the game.")
+
+# Play another Game
+def another_game():
+    while True:
+        play_again = input("\nWould you like to play again? (yes or no?)")
+        if play_again.lower() == "yes":
+            play_game()
+            continue
+        elif play_again.lower() == "no":
+            print("Thanks for playing. Hoper to see you soon.")
+            break
+        else:
+            print("\nInvalid Input. Please Try Again.")
+            continue
+
+# Game all put together
